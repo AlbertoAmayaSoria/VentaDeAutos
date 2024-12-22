@@ -13,7 +13,8 @@ public class Main extends JFrame{
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(600, 600);
         setLocationRelativeTo(null);
-        System.out.println("Hola");
+
+
     }
 
         // Metodo main para ejecutar el juego
