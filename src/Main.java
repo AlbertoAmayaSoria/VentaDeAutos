@@ -1,11 +1,25 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Collections;
+import java.util.ArrayList;
 
-        for (int i = 1; i <= 5; i++) System.out.println("i = " + i);
+public class Main extends JFrame{
+
+    public Main() {
+        // Inicialización de la ventana del juego
+        setTitle("Juego de Memoria");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(600, 600);
+        setLocationRelativeTo(null);
+        System.out.println("Hola");
     }
+
+        // Metodo main para ejecutar el juego
+        public static void main(String[] args) {
+            SwingUtilities.invokeLater(() -> new Main().setVisible(true));
+        }
+
+
 }
